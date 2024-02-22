@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<header class="cabesalho">
+    <img class="logo" src="/assets/High quality products 1 1.svg" alt="menino com lupa">
+    <h1 class="apresentacao__titulo">Criptografia em JS</h1>
+</header>
+<body>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <div class="input__entradaTexto">
+                  <input class="input" type="text" id="copiar" class="texto__input" placeholder="Digite um texto" >
+                   <div>
+                     <p class="texto__alerta">! Apenas letras minusculas e sem acentos.</p>
+                     <button onclick="encripta()" id="Criptografar" class="botao">Criptografar</button>
+                     <button onclick="descripta()" id="Descriptografar" class="botao">Descriptografar</buton>
+                  </div>
+            </div>
+                <div class="saida__resultado">
+                    <div>
+                        <p onclick="copiarTexto()" type="text" class="paragrafo__saida" id="paragrafo-saida"><strong>Nenhuma mensagem encontrada</strong><br>Digite um texto que você deseja criptografar ou descriptografar.</p>   
+                    </div>
+                        <div>
+                            <button onclick="copiarTexto()"class="botao__copiar">Copiar</button>
+                        </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer"><a href="https://github.com/Milton-Rocha-Oliveira"><img src="/assets/github.png"></a>__Desenvolvido por Milton Rocha__<a href="https://www.linkedin.com/in/milton-jos%C3%A9-rocha-de-oliveira-355898261/"><img src="/assets/linkedin.png"></a></footer>
+    <script src="app.js" defer></script>
+</body>

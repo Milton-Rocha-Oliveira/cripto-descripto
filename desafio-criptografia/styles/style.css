@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Playfair+Display+SC:ital,wght@0,400;1,700&family=Protest+Riot&display=swap');
+
+:root{
+    --cor--primaria: #021c9ff9;
+    --cor--secundaria: #e1ecf7;
+    --fonte--primaria: 'Iceberg', sans-serif;
+    --fonte--secundaria:'Playfair Display SC', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#a1a1f2 , #101849, #a4b2f4,#091659);
+    height: 102vh;
+}
+
+.cabesalho{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin:2rem;
+    Height: 5rem;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacao__titulo:hover{
+    color: var(--cor--secundaria);
+}
+
+.apresentacao__titulo{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte--primaria);
+    color: var(--cor--primaria);
+    font-weight: 100;
+}
+
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.input__entradaTexto{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    height: 33rem;
+    top: 10.5rem;
+    left: 15rem;
+}
+
+.input{
+    background-color: var(--cor--secundaria);
+    display: flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: solid 0.3rem var(--cor--primaria);
+    border-radius: 5rem;
+    size-adjust: 100rem;
+    text-align-last: auto;
+    height: 330rem;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--primaria);
+}
+
+.texto__alerta{
+    margin-left: 11rem;
+    font-family: var(--fonte--primaria);
+    color: var(--cor--secundaria);
+}
+
+.botao{
+    margin-left: 7rem;
+    background-color: var(--cor--secundaria);
+    align-items: center;
+    font-family: var(--fonte--primaria);
+    font-weight: 1000;
+    color: var(--cor--primaria);
+    width: 10em;
+    height: 3rem;
+    left: 15rem;    
+    border: solid 0.2rem var(--cor--primaria);
+    border-radius: 0.5rem;
+}
+
+.botao:hover{
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    font-size: 0.9rem;
+    border: solid 0.15rem var(--cor--secundaria);
+}
+
+.saida__resultado{
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--primaria);
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor--secundaria);
+    border: solid 0.2rem var(--cor--primaria);
+    Width: 26rem;
+    Height: 36rem;
+    border-radius: 2rem;
+    gap: 11rem;
+}
+
+.paragrafo__saida{
+    margin-top:10rem;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--primaria);
+    font-size: 1.1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.botao__copiar{
+    margin-left: 6rem;
+    background-color: var(--cor--secundaria);
+    font-family: var(--fonte--primaria);
+    font-weight: 1000;
+    color: var(--cor--primaria);
+    border: solid 0.2rem var(--cor--primaria);
+    Width: 10rem;
+    Height: 3rem;
+    border-radius: 1rem;
+}
+
+.botao__copiar:hover{
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    font-size: 1.2rem;
+    border: solid 0.15rem var(--cor--secundaria);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    font-family: var(--fonte--primaria);
+    color: var(--cor--secundaria);
+    margin: 0.3rem 17rem 0rem 14rem;
+}
+
+.footer:hover{
+    font-size: 1.2rem;
+}
+
+@media(max-width: 1250px) {
+    body{
+      height: 120vh;
+    }
+    
+    .apresentacao__conteudo{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .input{
+        margin: auto;
+        height: 100rem;
+        width: 25rem;
+    }
+
+    .texto__alerta{
+        margin: 0.2rem;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .botao{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .saida__resultado{
+        margin: auto;
+        Width: 25rem;
+        Height: 26rem;
+    }
+
+    .footer{
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    
+}
