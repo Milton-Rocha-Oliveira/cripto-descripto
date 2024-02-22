@@ -55,7 +55,6 @@ body{
 .input__entradaTexto{
     display: flex;
     flex-direction: column;
-    width: 680px;
     height: 33rem;
     top: 10.5rem;
     left: 15rem;
