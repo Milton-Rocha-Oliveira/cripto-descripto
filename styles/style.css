@@ -199,6 +199,11 @@ body{
         Height: 26rem;
     }
 
+    .botao__copiar{
+        color:var(--cor--seundaria);
+        border: solid var(--cor--secundaria);
+    }
+    
     .footer{
         font-size: 0.5rem;
         margin: 0;
