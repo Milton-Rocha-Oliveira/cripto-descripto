@@ -14,7 +14,7 @@ function encripta(){
   const text = document.querySelector('input').value;
 
   const cripto = text.replaceAll("a","01@").replaceAll("e","*d-").replaceAll("i","|^8").replaceAll("o","/+l").replaceAll("u","*9&");
-  exibirTextoNaTela('#paragrafo-saida',cripto);
+  exibirTextoNaTela('#paragrafo-saida',cripto.toLowerCase);
   
   limparCampo();
 }
