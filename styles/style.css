@@ -200,10 +200,13 @@ body{
     }
 
     .botao__copiar{
-        color:var(--cor--seundaria);
-        border: solid var(--cor--secundaria);
+        font-size: 0rem;
+        height: 0rem;
+        background-color: none;
+        color: var(--cor--secundaria);
+        border: none;
     }
-    
+
     .footer{
         font-size: 0.5rem;
         margin: 0;
